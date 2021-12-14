@@ -52,10 +52,10 @@
 
           symbols1     = pooch.symbolGroup ("poly").data (data1)
                                                    .shapePoints ("polygons")
-                                                   .fillColor ("190, 190, 190")
-                                                   .strokeColor ("150,150,150")
+                                                   .fillColor ("157, 157, 157")
+                                                   .strokeColor ("255,255,255")
                                                    .fillColorHighlight ("194, 171, 168")
-                                                   .strokeColorHighlight ("130, 130, 130")
+                                                   .strokeColorHighlight ("255,255,255")
                                                    .strokeWidthHighlight (1)
                                                    .batch (true)
                                                    .layer ("back")
@@ -72,7 +72,7 @@
         chart1.mouseDown (onMouseDown);
         chart1.mouseMove (onMouseMove);
         pooch.fetch (document).mouseUp(function () { mouseIsDown = false; chart1.mouseIgnore (false); });
-        pooch.fetch ("#pooch_back_chart0").css ({ "background-color": "#3d56b2" });
+        pooch.fetch ("#pooch_back_chart0").css ({ "background-color": "#93B5C6" });
         pooch.fetch ("#pooch_main_chart0").css ({ "background-image": "url(./examples/images/globe-cover.png)", "background-position": "center center" });
         setTimeout (chart1.draw, 500);
       }
